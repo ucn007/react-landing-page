@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+$values: 2 2px, 4 4px, 6 6px, 8 8px, 10 10px, 12 12px, 14 14px, 16 16px, 18 18px,
+  20 20px, 22 22px, 24 24px, 26 26px, 28 28px, 30 30px, 32 32px, 34 34px,
+  36 36px, 38 38px, 40 40px, 42 42px, 44 44px, 46 46px, 48 48px, 50 50px;
+
+$direction: t top, b bottom, r right, l left;
+
+@each $v1, $v2 in $values {
+  .p-#{$v1} {
+    padding: $v2;
+  }
+  @each $d1, $d2 in $direction {
+    .p-#{$d1}-#{$v1} {
+      padding-#{$d2}: $v2;
+    }
+  }
+}
+@each $v1, $v2 in $values {
+  .m-#{$v1} {
+    padding: $v2;
+  }
+  @each $d1, $d2 in $direction {
+    .m-#{$d1}-#{$v1} {
+      margin-#{$d2}: $v2;
+    }
+  }
+}
+$width: 100 100%, 50 50%, 25 25%, auto auto;
+@each $w, $w2 in $width {
+  .w-#{$w} {
+    width: $w2;
+  }
+}
+$displays: flex, block, inline-flex, none, table;
+@each $display in $displays {
+  .d-#{$display} {
+    display: $display;
+  }
+}
+$align: center, flex-start, flex-end, baseline, stretch;
+@each $a in $align {
+  .align-#{$a} {
+    align-items: $a;
+  }
+}
+$justify: center, flex-start, flex-end, space-between, space-around;
+@each $j in $justify {
+  .justify-#{$j} {
+    justify-content: $j;
+  }
+}

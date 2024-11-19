@@ -1,0 +1,34 @@
+// dark mode
+$bg-color-dark: rgb(13, 0, 91);
+$bg-grade-dark: radial-gradient(
+  circle,
+  rgba(13, 0, 91, 1) 0%,
+  rgba(0, 0, 0, 1) 59%
+);
+$txt-color-dark: #fff;
+$primary-bg-light: #474747;
+// light mode
+$bg-color-light: rgb(255, 255, 255);
+$bg-grade-light: radial-gradient(
+  circle,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(228, 228, 228, 1) 100%
+);
+$txt-color-ligth: #000;
+$primary-bg: #474747;
+$border1: #3f3f3f;
+
+$white: #fff;
+$primary-button-bg: hsla(318, 100%, 50%, 1);
+$primary-button-gradient: linear-gradient(
+  90deg,
+  hsla(318, 100%, 50%, 1) 0%,
+  hsla(308, 89%, 37%, 1) 100%
+);
+
+$secondary-button-bg: hsla(238, 100%, 57%, 1);
+$secondary-button-gradient: linear-gradient(
+  90deg,
+  hsla(238, 100%, 57%, 1) 0%,
+  hsla(238, 88%, 37%, 1) 100%
+);

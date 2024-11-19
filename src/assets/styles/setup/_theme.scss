@@ -1,0 +1,68 @@
+@import "../includes";
+.app {
+  @include sizes(100vw, 100%);
+
+  .mode-change {
+    @include size(60px);
+    @include position(fixed, auto, auto, 1%, 75px);
+    border-radius: 20px;
+  }
+  &.light-mode {
+    color: black;
+    background: $white !important;
+    .mode-change {
+      background-color: $bg-color-dark;
+    }
+    a {
+      color: black;
+      text-decoration: none !important;
+    }
+    .header {
+      background-color: $white;
+      border-bottom: 1px solid #dddddd;
+    }
+    .card {
+      background-color: $white;
+      color: black;
+      box-shadow: 0 0 10px #00000017;
+      .card-content {
+        color: #000;
+      }
+    }
+    .pricing-card {
+      background-color: $white !important;
+      box-shadow: 0 0 4px #c7c7c7;
+      a {
+        color: $white;
+      }
+    }
+    .contact-block {
+      .tile {
+        background-color: $white;
+        box-shadow: 0 0 4px #c7c7c7;
+      }
+      .contact-form {
+        background-color: $white;
+        box-shadow: 0 0 4px #c7c7c7;
+      }
+    }
+  }
+  &.dark-mode {
+    color: $white;
+    background-color: $bg-color-dark;
+    background: $bg-grade-dark;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    .mode-change {
+      background-color: $white;
+    }
+    a {
+      color: $white;
+      text-decoration: none !important;
+    }
+    .header {
+      background-color: black;
+    }
+  }
+}

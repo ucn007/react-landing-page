@@ -1,0 +1,86 @@
+@import "../../assets/styles/includes";
+.pricing {
+  padding: 60px 0;
+  .card-container {
+    margin: 0 -32px;
+    .pricing-card {
+      margin: 0 32px;
+      @include sizes(30%, auto);
+      min-width: 30%;
+      flex-direction: column;
+      background-color: #0f1535;
+      padding: 24px;
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+      border-top: 6px solid;
+
+      h3 {
+        @include font(24px, normal, 600);
+        margin-bottom: 8px;
+      }
+      ul {
+        width: 100%;
+        li {
+          padding: 16px 0;
+          justify-content: space-between;
+        }
+      }
+      a {
+        margin: 0 auto;
+        display: table;
+        @include font(18px, normal, 500);
+
+        padding: 10px 18px;
+        border-radius: 20px;
+        width: 100%;
+        text-align: center;
+      }
+      &.silver {
+        border-color: #00d10a;
+        p {
+          &.silver {
+            color: #00d10a;
+            @include sizes(100%, auto);
+            text-align: center;
+            @include font(32px, normal, 600);
+            margin: 12px 0;
+          }
+        }
+        a {
+          background-color: #00d10a;
+        }
+      }
+      &.gold {
+        border-color: #d3b200;
+        p {
+          &.gold {
+            color: #d3b200;
+            @include sizes(100%, auto);
+            text-align: center;
+            @include font(32px, normal, 600);
+            margin: 12px 0;
+          }
+        }
+        a {
+          background-color: #d3b200;
+        }
+      }
+      &.platinum {
+        border-color: #3700ff;
+        a {
+          background-color: #3700ff;
+        }
+        p {
+          &.platinum {
+            color: #3700ff;
+            @include sizes(100%, auto);
+            text-align: center;
+            @include font(32px, normal, 600);
+            margin: 12px 0;
+          }
+        }
+      }
+    }
+  }
+}

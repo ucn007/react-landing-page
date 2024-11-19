@@ -1,0 +1,39 @@
+@import "../../assets/styles/includes";
+.footer-block {
+  margin: 60px 0 0;
+  border-top: 1px solid #272727;
+  padding: 40px 0 0;
+  .main-footer {
+    padding-bottom: 40px;
+    .logo-des {
+      width: 40%;
+    }
+    .quick-links {
+      width: 20%;
+      .menu,
+      .service {
+        display: flex;
+        flex-direction: column;
+        a {
+          margin: 8px 0;
+          text-decoration: none;
+          @include font(14px, normal, normal);
+        }
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        a {
+          margin-right: 16px;
+          margin-top: 24px;
+          img {
+            max-width: 18px;
+          }
+        }
+      }
+    }
+  }
+  .copy-right {
+    text-align: center;
+  }
+}

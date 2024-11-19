@@ -1,0 +1,18 @@
+@import "../../assets/styles/includes";
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  @include font(18px, normal, 600);
+  &.primary-btn {
+    background-color: $primary-button-bg;
+    background: $primary-button-gradient;
+    color: $white;
+  }
+  &.secondary-btn {
+    background-color: $secondary-button-bg;
+    background: $secondary-button-gradient;
+    color: $white;
+  }
+}

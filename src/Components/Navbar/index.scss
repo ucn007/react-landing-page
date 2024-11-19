@@ -1,0 +1,26 @@
+@import "../../assets/styles/includes";
+.header {
+  border-bottom: 1px solid $border1;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  z-index: 1000;
+  .logo {
+    @include font(18px, normal, 600);
+  }
+  .nav-links {
+    a {
+      @include font(16px, normal, normal);
+      margin-left: 12px;
+      padding: 0 12px;
+    }
+  }
+  .hamburger {
+    @include sizes(20px, 15px);
+    div {
+      @include sizes(100%, 2px);
+      background-color: white;
+      margin: 4px 0;
+    }
+  }
+}

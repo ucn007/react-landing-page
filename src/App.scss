@@ -1,0 +1,5 @@
+@import "./assets/styles/includes";
+@import "./assets/styles/setup/theme";
+.app {
+  @include sizes(100%, auto);
+}

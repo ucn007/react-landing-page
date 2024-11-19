@@ -1,0 +1,63 @@
+@import "../../assets/styles/includes";
+.features {
+  padding: 40px 0;
+  .card-container {
+    margin: 0 -8px;
+  }
+}
+.about {
+  padding: 40px 0;
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    div {
+      flex: 1;
+      width: 50%;
+      &.about-content {
+        padding-right: 12px;
+      }
+      &.about-img {
+        padding-left: 12px;
+      }
+      img {
+        width: 100%;
+      }
+      p {
+        @include font(16px, 1.7, normal);
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.video-bg-sec {
+  padding: 60px 0;
+
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  .video-content {
+    position: absolute;
+    @include size(100%);
+    z-index: 0;
+    overflow: hidden;
+    opacity: 0.3;
+    video {
+      @include sizes(100%, auto);
+      transform: scale(1.5);
+      object-fit: fill;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+
+  p {
+    @include font(16px, 1.7, normal);
+    margin-bottom: 12px;
+  }
+}

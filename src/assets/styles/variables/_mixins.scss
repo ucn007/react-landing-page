@@ -1,0 +1,54 @@
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font($fontSize, $lineHeight, $fontWeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@mixin position($position, $top, $left, $right, $bottom) {
+  position: $position;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+@mixin posTopLeft($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+@mixin posTopRight($position, $top, $right) {
+  position: $position;
+  top: $top;
+  right: $right;
+}
+@mixin posBottomLeft($position, $bottom, $left) {
+  position: $position;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin posBottomRight($position, $bottom, $right) {
+  position: $position;
+  bottom: $bottom;
+  right: $right;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: table;
+}
+.section-heading {
+  @include font(42px, normal, 600);
+  margin-bottom: 24px;
+  text-align: center;
+}

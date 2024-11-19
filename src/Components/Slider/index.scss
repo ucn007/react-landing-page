@@ -1,0 +1,22 @@
+@import "../../assets/styles/includes";
+.silder {
+  padding-top: 60px;
+  margin-bottom: 24px;
+  .slider-text {
+    width: 60%;
+    h1 {
+      @include font(42px, normal, 600);
+      margin-bottom: 24px;
+    }
+    p {
+      @include font(18px, normal, normal);
+      margin-bottom: 24px;
+    }
+  }
+  .slider-img {
+    width: 40%;
+    img {
+      max-width: 100%;
+    }
+  }
+}

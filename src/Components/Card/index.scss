@@ -1,0 +1,115 @@
+@import "../../assets/styles/includes";
+.card {
+  flex: 1;
+  width: 25%;
+  padding: 16px;
+  background-color: #0f1535;
+  box-shadow: 0 3px 6px rgb(245 245 245 / 0%);
+  margin: 8px;
+  border-radius: 16px;
+  .card-inner-container {
+    display: flex;
+    align-items: flex-start;
+    .cardImg {
+      max-width: 40px;
+      max-height: 40px;
+      min-width: 40px;
+      min-height: 40px;
+      @include size(40px);
+      margin-right: 18px;
+      padding: 8px;
+      img {
+        width: 100%;
+      }
+    }
+    .card-content {
+      color: #fff;
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  &:nth-child(1) {
+    .cardImg {
+      &.card-img-bg {
+        background-color: rgb(255, 0, 0);
+        background: linear-gradient(
+          140deg,
+          rgb(255, 0, 0) 0%,
+          rgb(255, 102, 102) 100%
+        );
+        border-radius: 20px;
+      }
+    }
+  }
+  &:nth-child(2) {
+    .cardImg {
+      &.card-img-bg {
+        background-color: rgb(21, 107, 0);
+        background: linear-gradient(
+          140deg,
+          rgb(21, 107, 0) 0%,
+          rgb(21, 107, 102) 100%
+        );
+        border-radius: 20px;
+      }
+    }
+  }
+  &:nth-child(3) {
+    .cardImg {
+      &.card-img-bg {
+        background-color: rgb(83, 0, 65);
+        background: linear-gradient(
+          140deg,
+          rgb(83, 0, 65) 0%,
+          rgb(214, 48, 178) 100%
+        );
+        border-radius: 20px;
+      }
+    }
+  }
+  &:nth-child(4) {
+    .cardImg {
+      &.card-img-bg {
+        background-color: rgb(43, 0, 83);
+        background: linear-gradient(
+          140deg,
+          rgb(43, 0, 83) 0%,
+          rgb(89, 34, 141) 100%
+        );
+        border-radius: 20px;
+      }
+    }
+  }
+  &:nth-child(5) {
+    .cardImg {
+      &.card-img-bg {
+        background-color: rgb(148, 2, 2);
+        background: linear-gradient(
+          140deg,
+          rgb(148, 2, 2) 0%,
+          rgb(150, 41, 41) 100%
+        );
+        border-radius: 20px;
+      }
+    }
+  }
+  &:nth-child(6) {
+    .cardImg {
+      &.card-img-bg {
+        background-color: rgb(0, 95, 112);
+        background: linear-gradient(
+          140deg,
+          rgb(0, 95, 112) 0%,
+          rgb(103, 216, 236) 100%
+        );
+        border-radius: 20px;
+      }
+    }
+  }
+}
